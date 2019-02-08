@@ -1,0 +1,24 @@
+{
+  "name": "dark-mode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "closed",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "devDependencies": {
+    "@ebay/storybook-addon-themepicker": "^1.0.0",
+    "@storybook/react": "^3.4.0",
+    "@types/react": "^16.3.5",
+    "@types/storybook__react": "^3.0.8",
+    "awesome-typescript-loader": "^4.0.1",
+    "babel-core": "^6.26.0",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "emotion": "^9.2.12",
+    "emotion-theming": "^9.2.9",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  }
+}

@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemePickerPanel should mount 1`] = `
+.emotion-2 {
+  padding: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Market Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: rgb(68,68,68);
+}
+
+.emotion-0 {
+  width: 80px;
+  margin-right: 15px;
+  line-height: 30px;
+}
+
+.emotion-1 {
+  color: rgb(85,85,85);
+  width: 100%;
+  border: 1px solid rgb(247,247,247);
+  background-color: rgb(247,247,247);
+  border-radius: 3px;
+  height: 30px;
+}
+
+<ThemePickerPanel
+  api={
+    Object {
+      "onStory": [MockFunction] {
+        "calls": Array [
+          Array [
+            [Function],
+          ],
+        ],
+      },
+    }
+  }
+  channel={
+    Object {
+      "addListener": [MockFunction],
+      "addPeerListener": [MockFunction],
+      "emit": [MockFunction],
+      "eventNames": [MockFunction],
+      "listenerCount": [MockFunction],
+      "listeners": [MockFunction],
+      "on": [MockFunction] {
+        "calls": Array [
+          Array [
+            "ebay/themepicker/set-theme-list",
+            [Function],
+          ],
+        ],
+      },
+      "once": [MockFunction],
+      "prependListener": [MockFunction],
+      "removeAllListeners": [MockFunction],
+      "removeListener": [MockFunction],
+    }
+  }
+>
+  <div
+    className="emotion-2"
+  >
+    <label
+      className="emotion-0"
+      htmlFor="theme-picker"
+    >
+      Theme
+    </label>
+    <select
+      className="emotion-1"
+      id="theme-picker"
+      onChange={[Function]}
+    >
+      <option
+        key="0Theme A"
+        value={0}
+      >
+        Theme A
+      </option>
+      <option
+        key="1Theme B"
+        value={1}
+      >
+        Theme B
+      </option>
+      <option
+        key="2Theme C"
+        value={2}
+      >
+        Theme C
+      </option>
+    </select>
+  </div>
+</ThemePickerPanel>
+`;

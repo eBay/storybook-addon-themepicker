@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithThemes should mount 1`] = `
+<WithThemes
+  themes={
+    Array [
+      Object {
+        "name": "Default",
+        "theme": Object {
+          "color": "gray",
+        },
+      },
+      Object {
+        "name": "Dark",
+        "theme": Object {
+          "color": "black",
+        },
+      },
+      Object {
+        "name": "Bright",
+        "theme": Object {
+          "color": "canary",
+        },
+      },
+    ]
+  }
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "color": "gray",
+      }
+    }
+  >
+    <WithTheme(ThemeNameWithTheme)>
+      <ThemeNameWithTheme
+        theme={
+          Object {
+            "color": "gray",
+          }
+        }
+      >
+        <span>
+          gray
+        </span>
+      </ThemeNameWithTheme>
+    </WithTheme(ThemeNameWithTheme)>
+  </ThemeProvider>
+</WithThemes>
+`;

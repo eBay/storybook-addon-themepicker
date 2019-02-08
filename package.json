@@ -1,0 +1,85 @@
+{
+  "name": "@ebay/storybook-addon-themepicker",
+  "version": "1.0.0",
+  "description": "Storybook addon for toggling between various emotion themes",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "register.js"
+  ],
+  "repository": "https://github.com/eBay/storybook-addon-themepicker",
+  "author": "Frederik Goris <fgoris@ebay.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "CI": "yarn build && yarn lint && CI=true yarn test",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint:fix": "tslint -c tslint.json -p tsconfig.json --fix",
+    "clean": "rm -rf ./lib || true",
+    "test": "ts-node ./scripts/test.ts",
+    "pretty": "prettier --write 'src/**/*.ts?(x)' 'examples/**/*.ts?(x)' 'scripts/**/*.[jt]s'"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.16",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/jest": "^23.3.13",
+    "@types/react-dom": "^16.0.11",
+    "@types/storybook__addons": "^4.1.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.2.2",
+    "jest": "^22.1.4",
+    "jest-emotion": "^9.2.7",
+    "prettier": "1.7.4",
+    "promise": "^8.0.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.7.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.2",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.7.0"
+  },
+  "dependencies": {
+    "@storybook/addons": "^3.3.10",
+    "emotion": "^9.2.12",
+    "emotion-theming": "^9.2.6"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverageFrom": [
+      "src/**/*.ts?(x)"
+    ],
+    "setupFiles": [
+      "<rootDir>/scripts/jest/jest-polyfills.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer",
+      "jest-emotion/serializer"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.(ts|tsx)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testEnvironment": "jsdom",
+    "testURL": "http://localhost",
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    }
+  }
+}

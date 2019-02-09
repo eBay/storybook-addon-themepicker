@@ -12,7 +12,6 @@
   "repository": "https://github.com/eBay/storybook-addon-themepicker",
   "author": "Frederik Goris <fgoris@ebay.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "CI": "yarn build && yarn lint && CI=true yarn test",
     "build": "tsc",
